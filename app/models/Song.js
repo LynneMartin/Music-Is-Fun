@@ -8,4 +8,12 @@ export default class Song {
         this.price = song.collectionPrice
         this.preview = song.previewUrl
     }
+
+    //template info below, will show on user end
+    getTemplate() {
+        return `
+        <div class="col-md-3 pt-3">
+            
+        `
+    }
 }
