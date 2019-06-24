@@ -12,26 +12,17 @@ export default class Song {
     // //template info below, will show on user end
     get Template() {
         return `
-        <div class="col-md-3 pt-3">
-            <div class="card">
-            <a onclick="app.controllers.itunesCtrl.playSong('${this.preview}')">
-                <img class="card-img-top album-art" src="${this.albumArt}" alt="Card image">
-                </a>
-
-                <div class="card-body text-center">
-                    <h3 class="card-title">${this.title}</h3>
-                    <h5 class="card-title">${this.artist}</h5>
-                    <h6 class="card-title song-album">${this.collection}</h6>
-
-                    <div class="button-row">
-                        <a href="#!" class="btn purchase-btn d-flex justify-content-center align-items-center">Buy</a>
-                        <h4 class="card-title">${this.price}</h4>
-                        
-                        <audio class="w-75" controls src="" id="source" autoplay></audio>
-                        </div>
-                        </div>
-                        </div>
-                        </div>
+        <div style="padding: 1rem;" class="col-4">
+            <div style="background-color: rgba(255, 0, 0, 0.2)" class="card">
+            <h2 class ="card-title">Artist: ${this.artist}</h2>
+            <h3 class ="card-subtitle">Title: ${this.title}</h3><br>
+            <h4 class = "card-subtitle">Collection: ${this.collection}</h4><br>
+            <img style="width: 5.9rem;" src="${this.albumArt}" alt="Album Art"><br>
+            <h4 class ="card-subtitle">Price: ${this.price}</h4>
+            <audio controls style="width: 275px; height: 35px;">
+            <source src="${this.preview}"></audio>
+            </div>
+        </div>
         `
     }
 }

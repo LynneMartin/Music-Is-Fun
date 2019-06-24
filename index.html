@@ -17,15 +17,17 @@
 
     <h1 class="title">Songify</h1>
 
-    <div class="col-12 col-md-3 offset-md-1">
-        <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-            <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
-            <div class="form-group">
-                <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
-                <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
-            </div>
-        </form>
-    </div>
+    <div class="container-fluid">
+        <div id="row1" class="row">
+
+            <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
+                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                <div class="form-group">
+                    <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
+                    <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
+                </div>
+            </form>
+        </div>
     </div>
     </div>
 
