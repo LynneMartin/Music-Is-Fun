@@ -14,7 +14,7 @@ function setState(prop, data) {
   _subscribers[prop].forEach(fn => fn())
 }
 
-//DO NOT MODIFY
+// NOTE DO NOT MODIFY
 class ItunesService {
   get Songs() {
     return _state.songs

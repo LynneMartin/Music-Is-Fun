@@ -1,0 +1,12 @@
+body {
+  background: linear-gradient(to bottom right, pink, blue);
+  min-height: 100vh;
+  background-attachment: fixed;
+
+  /* background-color: black;
+  background-image: url('./background.jpg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-attachment: fixed; */
+}

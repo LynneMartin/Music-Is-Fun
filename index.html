@@ -9,7 +9,7 @@
     <title>Music Is Fun!</title>
 
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 
 </head>
 
@@ -24,7 +24,7 @@
         <div id="row1" class="row">
 
             <form class="form-inline" onsubmit="app.controllers.itunesCtrl.getMusic(event)">
-                <!--DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
+                <!--NOTE DO NOT MODIFY THE ID OR ONCLICK ATTRIBUTES IN THIS FORM-->
                 <div class="form-group">
                     <input type="text" class="form-control" name="artist" placeholder="Artist Name" />
                     <button type="submit" class="btn btn-primary" id="get-music-button">Get Music</button>
@@ -32,29 +32,37 @@
             </form>
         </div>
     </div>
+    <div class="container-fluid">
 
-    <div id="songs">
-        <div class="col-md-3 pt-3">
-            <div class="card">
-                <!--only testing album art on Fri-->
-                <a onclick="app.controllers.itunesCtrl.playSong('${this.preview}')">
-                    <img class="card-img-top album-art"
-                        src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Faithhillthehits.jpeg/220px-Faithhillthehits.jpeg"
-                        alt="Card image">
-                </a>
+        <div id="songs" class="row">
+            <div class="col-md-3 pt-3">
+                <div class="card">
+                    <!--only testing album art on Fri-->
+                    <a onclick="app.controllers.itunesCtrl.playSong('${this.preview}')">
+                        <img class="card-img-top album-art"
+                            src="https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Faithhillthehits.jpeg/220px-Faithhillthehits.jpeg"
+                            alt="Card image">
+                    </a>
 
-                <div class="card-body text-center">
-                    <h3 class="card-title title">${this.title}</h3>
-                    <h5 class="card-title artist">${this.artist}</h5>
-                    <h6 class="card-title album">${this.collection}</h6>
-                    <h4 class="card-title price">${this.price}</h4>
+                    <div class="card-body text-center">
+                        <h3 class="card-title title">${this.title}</h3>
+                        <h5 class="card-title artist">${this.artist}</h5>
+                        <h6 class="card-title album">${this.collection}</h6>
+                        <h4 class="card-title price">${this.price}</h4>
+                    </div>
                 </div>
             </div>
         </div>
+
     </div>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
     <script type="module" src="app/main.js"></script>
 </body>
 
