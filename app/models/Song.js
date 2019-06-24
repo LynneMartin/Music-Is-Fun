@@ -13,7 +13,7 @@ export default class Song {
     get Template() {
         return `
         <div style="padding: 1rem;" class="col-4">
-            <div style="background-color: rgba(255, 0, 0, 0.2)" class="card">
+            <div style="background-color: rgba(217, 217, 217)" class="card">
             <h2 class ="card-title">Artist: ${this.artist}</h2>
             <h3 class ="card-subtitle">Title: ${this.title}</h3><br>
             <h4 class = "card-subtitle">Collection: ${this.collection}</h4><br>
